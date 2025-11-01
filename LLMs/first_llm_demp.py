@@ -9,4 +9,5 @@ llm = OpenAI(model = 'gpt-3.5-turbo-instruct')
 
 #With the help of Invoke function we can interact with the LLM
 result = llm.invoke("What is LangChain?")
+#The result of LLM is of type LLMResult and it does not contain additional metadata
 print(result)
