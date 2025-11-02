@@ -5,7 +5,7 @@ import os
 #Use only when we have gpus available otherwise it will be very slow on cpus
 
 #By deafult c drive-> you can set it to any directory where you have enough space to store models   
-os.environ['F_HOME'] = "D:/huggingface"  # Setting huggingface cache directory
+# os.environ['HF_HOME'] = "D:/huggingface"  # Setting huggingface cache directory
 llm = HuggingFacePipeline(
     model_id="MiniMaxAI/MiniMax-M2",
     task="text-generation",
